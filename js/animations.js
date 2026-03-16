@@ -1,10 +1,9 @@
-document.addEventListener("DOMContentLoaded", ()=>{
+document.body.style.opacity = 0;
 
-document.body.style.opacity=0;
+window.onload = function(){
 
-setTimeout(()=>{
-document.body.style.transition="1s";
+document.body.style.transition="opacity 1s";
+
 document.body.style.opacity=1;
-},100);
 
-});
+}
